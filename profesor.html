@@ -147,10 +147,11 @@
   </div>
 
 
-  <!-- Caja de comentarios -->
+  <!-- Body -->
   <div class="container">
     <div class="row gap-5 justify-content-lg-between">
 
+      <!-- Primera columna -->
       <div class="col-8 bg-white border rounded p-5">
         <div class="d-flex gap-5 justify-content-between mb-4">
           <button class="btn btn-outline-primary w-100 fw-bold" type="button">
@@ -172,10 +173,11 @@
             <a href="" class=" text-secondary mx-2">Relevantes</a>
             <a href="" class=" text-secondary mx-2">Verificadas</a>
             <a href="" class=" text-secondary mx-2">Recientes</a>
-            <a href="" class=" btn btn-primary btn-sm">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <i class="bi bi-pencil"></i>
               Comentar
-            </a>
+            </button>
           </div>
         </div>
 
@@ -208,6 +210,7 @@
 
       </div>
 
+      <!-- Segunda columna -->
       <div class="col-3 p-5 bg-white border rounded">
         <div class="d-grid gap-2">
           <div class="d-flex justify-content-center">
@@ -220,6 +223,42 @@
   </div>
 
 
+  <!-- Modal -->
+
+
+  <!-- Modal -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Completa los siguientes campos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>clave</option>
+                  <option value="1">I7702</option>
+                  <option value="2">I7709</option>
+                </select>
+                <label for="floatingSelect">Selecciona una clave de materia</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Comentario:</label>
+              <textarea class="form-control" id="message-text"  style="height: 150px"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">cancelar</button>
+          <button type="button" class="btn btn-primary btn-sm">Guardar comentario</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
