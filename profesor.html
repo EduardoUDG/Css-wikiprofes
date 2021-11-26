@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Wikiprofes2.0</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Wikiprofes2.0</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Búsqueda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Top Profesores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terminos y condiciones</a>
+              </li>
+                            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+            </ul>
+            <form class="d-flex gap-3">
+                <button class="btn btn-primary px-5">Ingresar</button>
+                <button class="btn btn-outline-primary px-4">Registrarse</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- Jumbotron -->
+
+    <div class="jumbotron mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron-body d-flex justify-content-center align-items-center">
+                    <div class="col-6">
+                        <form action="" method="" class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre del profesor">
+                            <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Cartas -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body py-4 text-primary">
+                        <h2 class="card-title text-center">
+                            <i class="bi bi-graph-up"></i>
+                            200
+                        </h2>
+                        <p class="card-text text-center">
+                        Evaluaciones realizadas    
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body py-4 text-primary">
+                        <h2 class="card-title text-center">
+                            <i class="bi bi-person-plus"></i>
+                            150
+                        </h2>
+                        <p class="card-text text-center">
+                        Profesores indexados    
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body py-4 text-primary">
+                        <h2 class="card-title text-center">
+                            <i class="bi bi-graph-up"></i>
+                            35
+                        </h2>
+                        <p class="card-text text-center">
+                        Materiales de apoyo
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Acerca de  -->
+    <div class="container acercade">
+        <div class="row p-4 jumbotron border justify-content-between ">
+            <div class="col-8">
+                <h5>Acerca de Wikiprofes</h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tempus,
+                dignissim magna amet. Mi, urna sollicitudin neque phasellus dictum posuere.
+                Sollicitudin elit viverra diam augue porttitor nisl porttitor commodo, 
+                dui. Dolor eget odio odio lacus, sed facilisis iaculis sit et. Volutpat
+                nibh quisque lacus, pellentesque. Vel id vitae ullamcorper eu id duis
+                scelerisque. Arcu quis felis ac, sodales aenean placerat sagittis. 
+            </div>
+            <div class="col-4">
+                <img class="img-thumbnail" src="./logo.png" width="120px">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Top y màs -->
+    <div class="container mt-5">
+        <div class="row justify-content-between">
+            <div class="col-5 p-5 jumbotron border">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-5 p-5 jumbotron border d-flex justify-content-center align-items-center">
+                <div>
+                    <h4 class="text-center">Centros universitarios</h4><br>
+                    <p class="text-center">Próximamente...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <div class="container mt-5">
+        <div class="row">
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
