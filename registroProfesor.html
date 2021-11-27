@@ -97,12 +97,40 @@
                 <td>CUCEI</td>
                 <td  class="d-flex align-items-baseline gap-2">
                     <!-- Editar -->
-                    <a href="{{ route('roles.edit', $role) }}" class="btn btn-outline-primary btn-sm mr-3">Editar</a>
+                    <a href="{{ route('roles.edit', $role) }}" class="btn btn-outline-primary btn-sm mr-3">
+                      <i class="bi bi-pencil"></i>
+                      Editar
+                    </a>
 
                     <!-- Eliminar -->
                     <form action="{{ route('roles.destroy', $role) }}" method="POST">
-                        <button type="submit" class="btn btn-outline-danger btn-sm">Eliminar</button>
+                      <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-trash"></i>
+                        Eliminar
+                      </button>
                     </form>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Estás seguro de eliminar de forma permanente?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-danger">
+                              <i class="bi bi-trash mx-1"></i>
+                              Eliminar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                 </td>
             </tr>
           </tbody>
